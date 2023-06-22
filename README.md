@@ -1,6 +1,6 @@
 # Defense Unicorns Big Bang Distro on AWS
 
-Repository was used for a Live event and demonstration of deploying Defense Unicorns Big Bang Distro on June 22, 2023. You should look at [uds-package-dubbd](https://github.com/defenseunicorns/uds-package-dubbd) for the latest and greatest packages, documentation, etc...
+Repository was used for a [Live event](https://www.linkedin.com/events/gettingstartedwithdefenseunicor7072974551789301760) and demonstration of deploying Defense Unicorns Big Bang Distro on June 22, 2023. You should look at [uds-package-dubbd](https://github.com/defenseunicorns/uds-package-dubbd) for the latest and greatest packages, documentation, etc...
 
 [This](https://medium.com/defense-unicorns/defense-unicorns-big-bang-distribution-1276e6309718) post on Medium, also has a good overview and instructions.
 

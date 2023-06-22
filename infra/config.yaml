@@ -1,0 +1,23 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: "bigbang-aws-install"
+  region: us-east-2
+  version: "1.26"
+
+iam:
+  withOIDC: true
+
+addons:
+  - name: aws-ebs-csi-driver
+    version: v1.17.0-eksbuild.1
+
+    attachPolicyARNs:
+      - arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy
+
+managedNodeGroups:
+  - name: ng-1
+    instanceType: m5.2xlarge
+    desiredCapacity: 3
+    volumeSize: 150

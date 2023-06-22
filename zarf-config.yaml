@@ -1,0 +1,23 @@
+package:  
+  deploy:
+    set:
+      # -- Domain name for the EKS cluster
+      domain: bigbang.dev
+      # -- TLS key
+      key_file: bigbang.dev.key
+      # -- TLS cert
+      cert_file: bigbang.dev.cert
+      # -- Name of the EKS cluster
+      name: "bigbang-aws-install"
+      # -- Name of existing Terraform state bucket
+      state_bucket_name: uds-state-bucket
+      # -- Key path to Terraform state file within the bucket
+      state_key: tfstate/dev/uds-state-bucket.tfstate
+      # -- Name of DynamoDB table used for Terraform state locking
+      state_dynamodb_table_name: uds-state-dynamodb
+      # -- AWS region
+      region: us-east-2
+      # -- Provision a private/internal load balancer for the tenant ingress gateway, if false a public load balancer will be provisioned
+      private_tenant_lb: false
+      # -- if set to true, delete the S3 bucket and corresponding KMS key associated with the Loki bucket
+      #loki_force_destroy: "true"
